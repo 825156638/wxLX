@@ -1,0 +1,30 @@
+<view class="shop">
+  <image class="shop-img" src="//img10.360buyimg.com/n2/jfs/t1/5752/30/11796/188763/5bd13bebEe324dc34/f6dcc3d0f64a15d6.jpg!q80.webp"></image>
+  <view class="shop-info">
+    <text class="shop-title">模板：店铺名称</text>
+    <text class="shop-del">电话：</text>
+    <text class="shop-addres">地址：</text>
+    <text class="shop-time">营业时间：</text>
+  </view>
+  <view class="shop-start">
+    <view class="start-after">★★★★★</view>
+    <view class="start-before">★★★★★</view>
+  </view>
+</view>
+
+<view class="shop" wx:for='{{ shoopList }}' wx:key='{{ id }}'>
+  <image class="shop-img" src="{{ item.images[0] }}"></image>
+  <view class="shop-info">
+    <text class="shop-title ell">店铺名称{{ item.name }}</text>
+    <text class="shop-del">电话：{{ item.phone }}</text>
+    <text class="shop-addres">地址：{{ item.address }}</text>
+    <text class="shop-time">营业时间：{{ item.businessHours }}</text>
+  </view>
+  <view class="shop-start">
+    <view class="start-after">★★★★★</view>
+    <view class="start-before" style="width:{{ item.score }}%">★★★★★</view>
+  </view>
+</view>
+
+<view class="loadmore loading" wx:if='{{ hasMore }}'>正在加载...</view>
+<view class="loadmore" wx:else>你已经到达底线了</view>

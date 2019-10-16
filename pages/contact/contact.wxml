@@ -1,0 +1,18 @@
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>设置</text>
+  </navigator>
+  <view class="cell-item">
+    <input type="password"></input>
+  </view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>设置</text>
+  </navigator>
+   <navigator class="cell-item arrow">
+    <text>设置</text>
+  </navigator>
+</view>

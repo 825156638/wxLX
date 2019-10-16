@@ -1,0 +1,16 @@
+<view class="card" wx:for='{{ msgList }}' wx:key='id'>
+  <text class="card-title">{{ item.title }}</text>
+  <text class="card-date">{{ item.title }}</text>
+  <image class="card-image"
+src="{{ item.image }}" mode="scaleToFill"></image>
+  <text class="card-desc">{{ item.desc }}</text>
+  <text class="card-read arrow">查看详情</text>
+</view>
+<view class="card">
+  <text class="card-title">标题</text>
+  <text class="card-date">2017-12-11</text>
+  <image class="card-image"
+src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/36176/18/12971/85454/5d286524E75dcca21/94d1ce9b8a23e769.jpg!cr_1125x549_0_72!q70.jpg.dpg" mode="scaleToFill"></image>
+  <text class="card-desc">越努力，越幸运~</text>
+  <text class="card-read arrow">查看详情</text>
+</view>
